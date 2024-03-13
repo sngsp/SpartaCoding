@@ -5,7 +5,7 @@
 //  Created by Seungseop Lee on 3/12/24.
 //
 
-// [ lv.3 Number Baseball ]
+// [ lv. 3 Number Baseball ]
 // - 정답이 되는 숫자를 0에서 9까지의 서로 다른 3자리의 숫자로 바꿔주세요
 // - 맨 앞자리에 0이 오는 것은 불가능합니다
 
