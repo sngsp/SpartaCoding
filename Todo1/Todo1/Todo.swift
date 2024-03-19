@@ -8,6 +8,7 @@
 import UIKit
 
 struct TodoInfo {
+    let todoId: Int
     let todoName: String
     var isCompleted: Bool
 }

@@ -40,6 +40,9 @@
                                                         <constraint firstAttribute="height" constant="31" id="Mbs-iG-uCM"/>
                                                         <constraint firstAttribute="width" constant="49" id="yG2-zQ-XoO"/>
                                                     </constraints>
+                                                    <connections>
+                                                        <action selector="switchButtonTapped:" destination="ASf-Gf-mRK" eventType="valueChanged" id="54b-Bf-7ZX"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -47,31 +50,40 @@
                                                 <constraint firstAttribute="trailing" secondItem="azW-qq-1D3" secondAttribute="trailing" constant="20" id="Svj-x2-hAh"/>
                                                 <constraint firstItem="azW-qq-1D3" firstAttribute="centerY" secondItem="JBo-k8-Gqi" secondAttribute="centerY" id="YQ1-kt-Yju"/>
                                                 <constraint firstItem="mSH-vX-chZ" firstAttribute="leading" secondItem="JBo-k8-Gqi" secondAttribute="leading" constant="20" id="faR-8S-BAQ"/>
+                                                <constraint firstItem="azW-qq-1D3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mSH-vX-chZ" secondAttribute="trailing" constant="8" symbolic="YES" id="zdO-sy-N1O"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="switchButton" destination="azW-qq-1D3" id="Jol-MT-TNa"/>
                                             <outlet property="todoName" destination="mSH-vX-chZ" id="8eD-5u-BNs"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rhg-c0-gfV">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rhg-c0-gfV">
                                 <rect key="frame" x="302" y="59" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="addButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cuW-cw-o1F"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="SAO-IF-GxQ" firstAttribute="top" secondItem="Rhg-c0-gfV" secondAttribute="bottom" constant="15" id="618-cH-4Rm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SAO-IF-GxQ" secondAttribute="bottom" id="QCl-6W-FZJ"/>
+                            <constraint firstItem="Rhg-c0-gfV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="RrW-GC-g8z"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SAO-IF-GxQ" secondAttribute="trailing" id="Zbc-ZU-CTQ"/>
                             <constraint firstItem="SAO-IF-GxQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dwy-sC-cB0"/>
                             <constraint firstItem="SAO-IF-GxQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="kBl-nV-RKi"/>
+                            <constraint firstItem="Rhg-c0-gfV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="wtU-1R-n41"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rhg-c0-gfV" secondAttribute="trailing" constant="16" id="zJ5-NH-uQm"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addButton" destination="Rhg-c0-gfV" id="6Nd-8u-mj9"/>
                         <outlet property="tableView" destination="SAO-IF-GxQ" id="ead-J6-wYg"/>
                     </connections>
                 </viewController>
