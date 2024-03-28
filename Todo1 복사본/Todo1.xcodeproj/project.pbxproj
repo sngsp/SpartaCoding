@@ -62,8 +62,8 @@
 			children = (
 				5202ED9B2BA85E2C00BE0A30 /* AppDelegate.swift */,
 				5202ED9D2BA85E2C00BE0A30 /* SceneDelegate.swift */,
-				5202EDAF2BA85F8100BE0A30 /* Todo.swift */,
 				5202EDB12BA860AE00BE0A30 /* TodoCell.swift */,
+				5202EDAF2BA85F8100BE0A30 /* Todo.swift */,
 				5202ED9F2BA85E2C00BE0A30 /* ViewController.swift */,
 				5202EDA12BA85E2C00BE0A30 /* Main.storyboard */,
 				5202EDA42BA85E2D00BE0A30 /* Assets.xcassets */,
