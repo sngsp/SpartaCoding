@@ -22,20 +22,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
-        
-//        // 당겨서 새로고침을 위한 기능 추가
-//        let refreshControl = UIRefreshControl()
-//        refreshControl.addTarget(self, action: #selector(refresh(_:)), for: .valueChanged)
-//        self.refreshControl = refreshControl
     }
-    
-    // 당겨서 새로고침 액션
-//    @objc func refresh(_ sender: UIRefreshControl) {
-//        loadRandomProduct()
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
-//            sender.endRefreshing()
-//        }
-//    }
     
     func configureUI() {
         loadRandomProduct()
@@ -80,12 +67,13 @@ class ViewController: UIViewController {
         loadRandomProduct()
     }
     
+    // 위시리스트 담기 버튼
     @IBAction func addToWishlistButtonTapped(_ sender: UIButton) {
         
         print("위시리스트에 담기 버튼을 클릭했습니다.")
         guard let product = currentProduct else { return }
         
-        // 현재 표시된 제품을 wishlist에 추가
+        // 현재 제품을 wishlist에 추가
         let wishListItem = Product(id: product.id,
                                    title: product.title,
                                    descriptionText: product.descriptionText,

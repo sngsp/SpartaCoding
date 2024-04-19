@@ -70,23 +70,7 @@ class WishlistViewController: UIViewController, UITableViewDataSource {
             
             // 테이블 뷰에서 해당 셀 삭제
             tableView.deleteRows(at: [indexPath], with: .fade)
-            // 리로드데이터 박아야지 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 내일!
+            // 리로드데이터 쓰면 좋아유 내일 바꿔야지@@@@@@@@@@@@@@@
         }
-        
-        //        if editingStyle == .delete {
-        //
-        //            wishList.remove(at: indexPath.row)
-        //            tableView.deleteRows(at: [indexPath], with: .fade)
-        //
-        //        } else if editingStyle == .insert {
-        //
-        //        }
-        //    }
     }
-    
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//            return 1 // 적절한 높이를 설정합니다.
-//        }
-    
-    
 }

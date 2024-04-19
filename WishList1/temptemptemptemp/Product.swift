@@ -7,7 +7,7 @@
 
 import Foundation
 
-// 코어데이터에 넘기는 구조체
+// 코어데이터에 넘길 때 사용할 구조체
 
 struct Product {
     let id: Int

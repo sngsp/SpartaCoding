@@ -42,6 +42,7 @@ class APIManager {
     }
 }
 
+// API에서 받아올 때 사용할 구조체
 struct ProductData: Decodable {
     let id: Int
     let title: String
